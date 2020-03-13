@@ -6,6 +6,10 @@
     --black: #2e2e2e;
 }
 
+iframe {
+    padding-top: 100px;
+}
+
 
 /* Css Carlos */
 
@@ -116,9 +120,6 @@ a {
 @media screen and (min-width: 576px) {
     .container {
         max-width: 896px;
-    }
-    h1 {
-        display: none;
     }
 }
 
