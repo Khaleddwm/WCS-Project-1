@@ -29,9 +29,7 @@ body {
 }
 
 h1{
-	padding-top: 100px;
 	font-family: 'Raleway', sans-serif;
-	font-size: 5rem;
     color: #f76c6c;
     font-family: 'Raleway', sans-serif;
 }
@@ -118,6 +116,9 @@ a {
 @media screen and (min-width: 576px) {
     .container {
         max-width: 896px;
+    }
+    h1 {
+        display: none;
     }
 }
 

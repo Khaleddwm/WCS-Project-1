@@ -269,6 +269,13 @@ a {
 
 
 /* -----------------------------------------------------------------------------CSS Khaled ----------------------------------------------------------------------------------------------*/
+.artprincipal {
+    padding-top: 50px;
+}
+
+.container h1 {
+    color:white
+}
 
 article {
     padding-bottom: 10px;
@@ -294,12 +301,13 @@ article {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 100%;
 }
 
 
 .artprincipal p{
   font-size: 1.4rem;
+  width: 95%;
 }
 
 
@@ -369,4 +377,3 @@ article {
         margin-bottom: 0px;
     }
 }
-
