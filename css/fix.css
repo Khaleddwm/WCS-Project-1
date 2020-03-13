@@ -1,0 +1,119 @@
+footer {
+	background-color:#39424e;
+	color:white;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+    align-items: center;
+    width:100%;
+    padding-top: 10px;
+}
+
+/* font */
+
+h3 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 20px;
+ }
+
+ .sizefoot {
+ 	font-size: 1.8rem;
+ }
+
+
+/*fin font */
+
+footer img {
+	width:  40px;
+	height: 40px;
+}
+
+.sociaux{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.campus_france{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	font-size: 1rem;
+}
+
+.campus_europe{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+footer div p {
+	margin-top:0;
+}
+
+.iconehorizontal{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width:700px){
+	
+	footer{
+		flex-direction:row;
+		justify-content: space-around;
+		align-items: center;
+		font-size: 0.5em;
+	}
+
+	.campus{
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content: center;
+		min-width: 40%;
+	}
+
+	.conteneur_liste_campus{
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.mentions_légales{
+        padding-bottom: 35px;
+	}
+
+
+}
+
+
+/*@media screen and (min-width:576px){
+	footer{
+		flex-direction:row;
+		justify-content: space-around;
+        align-items: center;
+        background-color:#39424e;
+	}
+​
+	.campus{
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content: center;
+		min-width: 40%;
+	}
+​
+	.conteneur_liste_campus{
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+    }
+    
+    .mentions_légales{
+        padding-bottom: 35px;
+	}
+} */

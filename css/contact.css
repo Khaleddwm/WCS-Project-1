@@ -1,0 +1,349 @@
+/* On utilisee : root pour déclarer les variables CSS */
+:root {
+
+    /* Variable CSS */
+    --primary: #EE6B6B;
+    --black: #2e2e2e;
+}
+
+
+/* Css Carlos */
+
+/* ---------------------------------------------------------------------Body------------------------------------------------------------------------------ */
+
+/*Body Mobile*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    /* font-size: 1.6rem; Déjà déclaré dans le base.css */
+    /* line-height: 1.5; Déjà déclaré dans le base.css */
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 35px;
+    background-color: #ECECEC;
+    
+}
+
+.scroll {
+    scroll-margin-top: 4.4rem;
+}
+
+h1{
+	padding-top: 100px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 5rem;
+    color: #f76c6c;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+p {
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+
+/* Body Web */
+
+@media screen and (max-width: 576px) {
+    body[data-burger="true"]{
+        overflow: hidden;
+        
+    }
+}
+
+/* -----------------------------------------------------------------------Header------------------------------------------------------------------ */
+
+
+/* Header Mobile*/
+.site-header {
+    background-color: var(--primary);
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Headers web : médiaquéry header + div .site header et containeur  */
+
+/* Largeur > 576px */
+
+@media screen and (min-width: 576px) {
+    .site-header .container {
+        justify-content: flex-start;
+    }
+}
+
+/* ---------------------------------------------------------------------------a---------------------------------------------------------------------------- */
+
+/* Couleur du texte nav  */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------Div= Containeur------------------------------------------------------------------- */
+
+/* Container Mobile enfants = logo, nav, ul, li, class=menu */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1.6rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Containeur Web (Media Queries*/
+
+/* Largeur > 576px */
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 896px;
+    }
+}
+
+/* Largeur > 768px */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 1184px;
+    }
+}
+
+/* Largeur > 992px */
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 1568px;
+    } 
+}
+
+/* Largeur > 1200px */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1824px;
+    }
+}
+
+/* -----------------------------------------------------------------------Logo----------------------------------------------------------------------------- */
+
+/* Logo Mobile & Web  */
+
+.logo {
+    position: relative;
+    z-index: 100;
+}
+
+/* -------------------------------------------------------------Nav class = main-nav---------------------------------------------------------------------------- */
+
+/*Nav Web & Mobile*/
+.main-nav {
+    display: flex;
+    margin-left: 1rem;
+}
+
+/* ------------------------------------------------------------------------Menu-------------------------------------------------------------------------------- */
+
+/*ul class = menu  (Pour afficher du menu dans le burger menu) */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    transform: translateY(-100%);
+    transition: transform .3s;
+/* ------------------------------------------------------------------------Font Bar de Navigation Mode Mobile------------------------------------------------------ */
+    font-family: 'Raleway', sans-serif;
+                                        
+
+}
+
+/*lien du menu */
+.menu a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color .3s ease-in-out;
+}
+
+.menu a:hover,
+.menu a:focus {
+    outline: 0;
+    background-color: rgba(0,0,0,.25);
+}
+
+
+/*médiaquery du burger menu */
+/* Largeur > 576px */
+@media screen and (min-width: 576px) {
+    .menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateY(0);
+        width: 100%;
+/* ------------------------------------------------------------------------Font Bar de Navigation Mode Web-------------------------------------------------------------------------------- */
+         font-family: 'Raleway', sans-serif;
+                                          
+        
+    }
+
+    .toggle-menu {  /*Je fais disparaitre le burger menu au dessus de 576px*/
+        display: none;
+    }
+} 
+
+
+/* ---------------------------------------------------------------Burger Menu------------------------------------------------------------------------------- */
+
+/*Animation js du burger menu*/
+
+.menu:not([hidden]) {
+    transform: translateY(0);
+}
+/*burger menu création + annimation et  boutton du burger menu*/
+.toggle-menu {
+    position: relative;
+    z-index: 100;
+    width: 5rem;
+    height: 4.4rem;
+    padding: 2rem 1rem;
+    border: 0;
+    background-color: #fff;
+    background-clip: content-box;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+/*barre centrale du burger menu*/
+.toggle-menu[aria-expanded="true"] {
+    background-color: rgba(255,255,255,0);
+}
+/*bare haute et basse*/
+.toggle-menu::before,
+.toggle-menu::after {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    height: .4rem;
+    background-color: #fff;
+    transition: transform .3s ease-in-out;
+}
+
+.toggle-menu::before { /*bare haute et basse*/
+    top: 1rem;
+    transform-origin: top left; /*transformation en X*/
+}
+
+.toggle-menu::after { /*bare haute et basse*/
+    bottom: 1rem;
+    transform-origin: bottom left; /*transformation en X*/
+}
+
+.toggle-menu[aria-expanded="true"]::before { /*transformation en X*/
+    transform: rotate(45deg); /*transformation en X*/
+}
+
+.toggle-menu[aria-expanded="true"]::after { /*transformation en X*/
+    transform: rotate(-45deg); /*transformation en X*/
+}
+
+
+/* ---------------------------------------Contact----------------------------- */
+
+label{
+	color: black;
+	font-size: 20px;
+    
+}
+
+.contact {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.contact-form {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+    column-gap: 1.6rem;
+}
+
+/* Largeur > 992px */
+@media screen and (min-width: 62em) {
+    .contact-form {
+        grid-column: 2 / -2;
+    }
+}
+
+/* Largeur > 1200px */
+@media screen and (min-width: 75em) {
+    .contact-form {
+        grid-column: 3 / -3;
+    }
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: .2rem;
+    padding: .5rem;
+}
+
+.contact-form textarea {
+    min-height: 12rem;
+}
+
+.contact-form label {
+    text-align: left;
+}
+
+.contact-form button {
+    justify-self: end;
+}
+
+.contact-form .last-half,
+.contact-form .first-half,
+.contact-form .full-width {
+    grid-column: 1 / -1;
+}
+
+/* Largeur > 768px */
+@media screen and (min-width: 48em) {
+    .contact-form .last-half {
+        grid-column: 2 / -1;
+    }
+    
+    .contact-form .first-half {
+        grid-column: 1 / 2;
+    }
+}
