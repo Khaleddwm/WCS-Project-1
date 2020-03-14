@@ -306,7 +306,7 @@ article {
 
 
 .artprincipal p{
-  font-size: 1.4rem;
+  font-size: 20px;
   width: 95%;
 }
 
@@ -358,7 +358,7 @@ article {
         margin-right: 0;
         padding-left: 2%;
         padding-right: 2%;
-        font-size: 19px;
+        font-size: 23px;
         
     }
     .imgtext1, .imgtext3 {
