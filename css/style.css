@@ -18,7 +18,7 @@ body {
     /* font-size: 1.6rem; Déjà déclaré dans le base.css */
     /* line-height: 1.5; Déjà déclaré dans le base.css */
     color: var(--black);
-    text-align: center;
+    text-align: initial;
     margin-bottom: 35px;
     background-color: #ECECEC;
     
@@ -165,6 +165,7 @@ a {
     background-color: var(--primary);
     transform: translateY(-100%);
     transition: transform .3s;
+    text-align: center;
 /* ------------------------------------------------------------------------Font Bar de Navigation Mode Mobile------------------------------------------------------ */
     font-family: 'Raleway', sans-serif;
                                         
@@ -323,6 +324,16 @@ article {
     text-decoration: none;
     color: white;
     
+}
+
+.iframe{
+    display: flex;
+    justify-content: center;
+}
+
+.adcontact {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 /* Version Web */
