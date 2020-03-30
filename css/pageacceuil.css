@@ -8,7 +8,9 @@ html {
     height: 100%;
 }
 
-
+a:link {
+    text-decoration: none;
+}
 
 .alignement h1 {
     margin-top: 25px;
@@ -58,6 +60,7 @@ h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
     color:white;
+    text-decoration: none;
 }
 
 /* Mon logo est en position flex et aligné au centre, décalé du haut de la page*/

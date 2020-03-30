@@ -1,34 +1,17 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?php include_once 'includePhp/head.php' ?>
     <meta name="description" content="Présentation de la Wild Code School de Tours">
     <title>Nos wilders</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fix.css">
-    <!--Font de la bar Nav-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <STYLE>A {text-decoration: none;} </STYLE>
+
     <header class="site-header">
         <div class="container">
-            <a href="index.html"><img src="https://i.postimg.cc/BLhrcN82/2-I-z-O4l-DH3hy-XSCg-YHINGA.png" width=40 alt="Logo de la Wild Code School" class="logo"></a>
-            <h1>Nos wilders</h1>
-            <nav class="main-nav">
-                <button class="toggle-menu" aria-expanded="false" aria-controls="menu"><span
-                        class="screen-reader-text">menu</button>
-                <ul class="menu" id="menu" hidden>
-                    <li><a href="campus.html">🏠Campus</a></li>
-                    <li><a href="pedagogie.html">👩🏻‍🏫Pédagogie</a></li>
-                    <li><a href="noswilders.html">👥 Nos Wilders</a></li>
-                    <li><a href="nousrejoindre.html">🤝Nous rejoindre</a></li>
-                    <li><a href="contact.html">📞Nous Contacter</a></li>
-                </ul>
-            </nav>
+            <a href="index.php"><img src="https://i.postimg.cc/BLhrcN82/2-I-z-O4l-DH3hy-XSCg-YHINGA.png" width=40 alt="Logo de la Wild Code School" class="logo"></a>
+            <h1>Nos Wilders</h1>
+            <?php include_once 'includePhp/nav.php'; ?>
         </div>
     </header>
         <!-- HTML Khaled -->
@@ -86,8 +69,8 @@
                         quis tempor leo placerat.
                     </p>
                 </article>
-                <article class="articlefin">
-                <h2 id="title4" class="section4">Conseils des wilders</h2>
+                <article id="title4" class="articlefin">
+                <h2 class="section4">Conseils des wilders</h2>
                     <p class="imgtext4">
                         <img src="photos/conseils.jpg" alt="img4"/>
                     </p>
@@ -105,83 +88,11 @@
                     </p>
                 </article>
             </div>
-            <div class="ancre">
-                <a href="#title1">Promos</a>
-                <a href="#title2">Parcours</a>
-                <a href="#title3">Ambitions</a>
-                <a href="#title4">Conseils</a>
-            </div>
+            <?php include 'includePhp/ancrewilder.php' ?>
 
           <!-- Charles Footer -->
-      <footer>
-
-        <div class ="campus">
-
-          <h3> AUTRES CAMPUS </h3>
-
-          <div class="conteneur_liste_campus">
-
-            <div class="campus_france">
-
-              <h3>En France</h3>
-                <p class ="sizefoot">Biarritz</p>
-                <p class ="sizefoot">Bordeaux</p>
-                <p class ="sizefoot">La Loupe</p>
-                <p class ="sizefoot">Lille</p>
-                <p class ="sizefoot">Lyon</p>
-                <p class ="sizefoot">Marseille</p>
-                <p class ="sizefoot">Nantes</p>
-                <p class ="sizefoot">Orléans</p>
-                <p class ="sizefoot">Paris</p>
-                <p class ="sizefoot">Reims</p>
-                <p class ="sizefoot">Strasbourg</p>
-                <p class ="sizefoot">Toulouse</p>
-                <p class ="sizefoot">Tours</p>
-
-            </div>
-
-            <div class="campus_europe">
-          
-            <h3>En Europe</h3>
-                <p class ="sizefoot">Amsterdam</p>
-                <p class ="sizefoot">Barcelone</p>
-                <p class ="sizefoot">Berlin</p>
-                <p class ="sizefoot">Bruxelles</p>
-                <p class ="sizefoot">Bucarest</p>
-                <p class ="sizefoot">Budapest</p>
-                <p class ="sizefoot">Dublin</p>
-                <p class ="sizefoot">Lisbonne</p>
-                <p class ="sizefoot">Londres</p>
-                <p class ="sizefoot">Madrid</p>
-                <p class ="sizefoot">Milan</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="sociaux">
-
-          <h3>RESEAUX SOCIAUX</h3>
-
-          <div class="iconehorizontal">
-
-            <img src="https://i.postimg.cc/KYvwnJv7/efbca9a9-acc3-43ea-b34c-186a95866ce0.jpg" alt="facebook">
-            <img src="https://i.postimg.cc/mg40rTv5/nouveau-logo-twitter.jpg" alt="twiter">
-            <img src="https://i.postimg.cc/SKqtmVMF/computer-icons-instagram-logo-sticker-png-favpng-LZm-Xr3-KPy-Vbr8-Lk.jpg" alt=" instagram">
-            <img src="https://i.postimg.cc/B6jzzbFX/38401.jpg" alt="github">
-            <img src="https://i.postimg.cc/mZqXPTHS/kisspng-youtube-live-computer-icons-logo-youtube-5b110799afdc70.jpg" alt="youtube">
-
-          </div>
-
-        </div>
-
-        <div class="mentions_légales">
-          <h3>MENTIONS LEGALES</h3>
-        </div>
-
-      </footer>
+    
+        <?php include_once 'includePhp/footer.php' ?>
 
 <script src="js/navigation.js"></script>
 </body>

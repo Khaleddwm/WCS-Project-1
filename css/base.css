@@ -66,14 +66,6 @@ article > * + * {
   margin-top: 1em;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 /* Remove font style on address */
 address {
   font-style: normal;

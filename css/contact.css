@@ -294,7 +294,6 @@ label{
 .contact-form {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-auto-flow: dense;
     column-gap: 1.6rem;
 }
